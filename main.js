@@ -1,9 +1,13 @@
+//add .only to test in main.test.js to run only the test for the kata you are working on
+//the first one has been done for you
+
+
 
 //KATA - 1 (ADD TWO POSITIVE INTEGERS)
 export function addNumbers(a, b) {
     //Write a function that add a and b, returns the result
     //a and b will always be positive integers
-    return a + b
+    return a + b;
 
 };
 
@@ -15,8 +19,7 @@ export function addNumbers(a, b) {
 
 
 export function weeklyAverageProfit(Mon, Tues, Wed, Thurs, Fri, Sat, Sun){
- let averageSales = (Mon + Tues + Wed + Thurs + Fri + Sat + Sun)/7
- return averageSales
+
 }
 
 
@@ -25,18 +28,6 @@ export function weeklyAverageProfit(Mon, Tues, Wed, Thurs, Fri, Sat, Sun){
 //Your function should return the day of the week that you plan on closing. 
 // It should return a string starting with a capital letter and the full name of the day: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 export function leastSalesDay(Mon, Tues, Wed, Thurs, Fri, Sat, Sun){
-    let daysOfTheWeekArr = [ 
-        {day: "Tuesday", earnings: Tues}, 
-        {day: "Wednesday", earnings: Wed}, 
-        {day: "Thursday", earnings: Thurs}, 
-        {day: "Friday", earnings: Fri}, 
-        {day: "Saturday", earnings: Sat},
-        {day: "Sunday", earnings: Sun}]
-    let lowestDaySales = {day: "Monday", earnings: Mon}
-    for (let i = 0; i < daysOfTheWeekArr.length; i++){
-        if(daysOfTheWeekArr[i].earnings < lowestDaySales.earnings){
-            lowestDaySales = daysOfTheWeekArr[i]
-        } 
-    } 
-    return lowestDaySales.day;
+   
+
 }
