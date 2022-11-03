@@ -37,20 +37,22 @@ test.each([
 ])('Calculates the correct average', (Mon, Tues, Wed, Thurs, Fri, Sat, Sun) => {
     const actual = weeklyAverageProfit(Mon, Tues, Wed, Thurs, Fri, Sat, Sun);
     const expected = (Mon + Tues + Wed + Thurs + Fri + Sat + Sun)/7;
-    console.log(Mon, Tues, Wed, Thurs, Fri, Sat, Sun)
-    console.log(expected, actual)
     expect(actual).toBe(expected);
 });
 
 //TEST FOR KATA 2.2
 
-test.only.each([
+test.each([
     //This test has to be hardcoded:
-    [34, 6934, 3946734, -237246734, 3543465, -234, 1234, "Thursday"],
+    [6859, 8374, -1823, 9470, -85897, 5149, 7907, "Friday"],
+    [485859, 8374, 1823, 570, 85897, -5149, 7907, "Saturday"],
+    [3100, 5500, 6705, 657, 85, -129, -8907, "Sunday"],
+    [3100, -5500, 6705, 657, -85, -129, 907, "Tuesday"],
+    [-100, 500, 12305, 657, 2385, -29, 547, "Monday"],
+    [34, 6934, 3946734, -2372467, 3543465, -234, 1234, "Thursday"],
     [1, -5, -305, 657, 2385, -293, 547, "Wednesday"],
   ])('Finds the day with the lowest number and brings back the name of the day as a string', (Mon, Tues, Wed, Thurs, Fri, Sat, Sun, expected) => {
       const actual = leastSalesDay(Mon, Tues, Wed, Thurs, Fri, Sat, Sun);
-      console.log(actual, expected)
       expect(actual).toBe(expected);
   });
 
