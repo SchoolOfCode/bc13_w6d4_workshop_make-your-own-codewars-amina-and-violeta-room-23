@@ -13,7 +13,7 @@ let thousands = Math.ceil(Math.random()*10000)
 let negThousands = Math.ceil(Math.random()*10000)*(-1)
 
 //TEST FOR FIRST KATA
-test.only.each([
+test.each([
   [ones, ones],
   [tens, tens],
   [hundreds, hundreds],
